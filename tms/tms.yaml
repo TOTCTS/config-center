@@ -2,7 +2,7 @@ server:
   port: 8080
 spring:
   application:
-    name: tms
+    name: tms-default
   datasource:
     url: jdbc:mysql://localhost:3306/tms?useUnicode=true&characterEncoding=utf8
     driver-class-name: com.mysql.cj.jdbc.Driver

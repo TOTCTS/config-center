@@ -3,6 +3,21 @@ server:
 spring:
   application:
     name: gateway-dev
+    cloud:
+        gateway:
+          routes:
+          - id: tms-dev
+            uri: lb://tms-dev
+            predicates:
+            - Path=/tms/**
+            filters:
+            - StripPrefix=1
+          - id: hub
+            uri: lb://hub-dev
+            predicates:
+            - Path=/hub/**
+            filters:
+            - StripPrefix=1
 eureka:
   client:
     healthcheck:
