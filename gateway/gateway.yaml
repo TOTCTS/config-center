@@ -2,7 +2,7 @@ server:
   port: 10101
 spring:
   application:
-    name: gateway-default
+    name: gateway
 eureka:
   client:
     healthcheck:
