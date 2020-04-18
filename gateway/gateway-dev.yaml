@@ -12,7 +12,7 @@ spring:
             - Path=/tms/**
             filters:
             - StripPrefix=1
-          - id: hub
+          - id: hub-dev
             uri: lb://hub-dev
             predicates:
             - Path=/hub/**
