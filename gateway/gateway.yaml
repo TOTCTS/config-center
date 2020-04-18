@@ -1,0 +1,11 @@
+server:
+  port: 10101
+spring:
+  application:
+    name: gateway-default
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defualtZone: http://localhost/8761/eureka
